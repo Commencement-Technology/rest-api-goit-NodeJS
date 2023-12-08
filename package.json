@@ -1,5 +1,15 @@
 {
-  "name": "template",
+  "name": "rest-api",
+  "author": "Alex Smagin",
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "nodejs",
+    "restapi",
+    "backend",
+    "fullstack",
+    "bootcamp"
+  ],
   "version": "0.0.0",
   "private": true,
   "scripts": {
