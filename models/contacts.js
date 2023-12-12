@@ -65,12 +65,14 @@ const addContact = async ({ name, email, phone }) => {
     await fs.writeFile(contactsPath, JSON.stringify(allContacts, null, 2));
     return newContact;
   } catch (error) {
-    console.error("Error reading file:", error.message);
+    console.error("Validation error or error writing file:", error.message);
   }
 };
 
 const updateContact = async (contactId, body) => {
   try {
+    await schema.validateAsync(body, { abortEarly: false });
+
     const contacts = await listContacts();
     const findIndex = contacts.findIndex((contact) => contact.id === contactId);
     const updatedContact = contacts.find((contact) => contact.id === contactId);
@@ -89,7 +91,10 @@ const updateContact = async (contactId, body) => {
     await fs.writeFile(contactsPath, JSON.stringify(allContacts, null, 2));
     return updatedContact;
   } catch (error) {
-    console.error("Error reading file:", error.message);
+    console.error(
+      "Validation error or error reading/writing file:",
+      error.message
+    );
   }
 };
 
