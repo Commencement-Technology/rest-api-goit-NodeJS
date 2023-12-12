@@ -6,7 +6,6 @@ import {
   removeContact,
   updateContact,
 } from "../../models/contacts.js";
-// import contacts from "../../models/contacts.js";
 
 const router = express.Router();
 

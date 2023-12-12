@@ -39,27 +39,41 @@ const removeContact = async (contactId) => {
 };
 
 const addContact = async ({ name, email, phone }) => {
-  const contacts = await listContacts();
-  const newContact = {
-    id: uuidv4(),
-    name,
-    email,
-    phone,
-  };
-  const result = [...contacts, newContact];
-  await fs.writeFile(contactsPath, JSON.stringify(result, null, 2));
-  return newContact;
+  try {
+    const contacts = await listContacts();
+    const newContact = {
+      id: uuidv4(),
+      name,
+      email,
+      phone,
+    };
+    const allContacts = [...contacts, newContact];
+    await fs.writeFile(contactsPath, JSON.stringify(allContacts, null, 2));
+    return newContact;
+  } catch (error) {
+    console.error("Error reading file:", error.message);
+  }
 };
 
 const updateContact = async (contactId, body) => {
-  // const updatedData = body;
-  // console.log(updatedData);
   try {
     const contacts = await listContacts();
-    const result = contacts.find((contact) => contact.id === contactId);
-    // console.log(Object.keys(result));
-    // console.log(result);
-    return result || null;
+    const findIndex = contacts.findIndex((contact) => contact.id === contactId);
+    const updatedContact = contacts.find((contact) => contact.id === contactId);
+    if (!updatedContact) {
+      return null;
+    }
+    Object.entries(body).forEach(([key, value]) => {
+      if (Object.prototype.hasOwnProperty.call(updatedContact, key)) {
+        updatedContact[key] = value;
+      }
+    });
+
+    contacts.splice(findIndex, 1);
+
+    const allContacts = [...contacts, updatedContact];
+    await fs.writeFile(contactsPath, JSON.stringify(allContacts, null, 2));
+    return updatedContact;
   } catch (error) {
     console.error("Error reading file:", error.message);
   }
