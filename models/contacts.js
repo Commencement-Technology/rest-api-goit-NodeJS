@@ -1,18 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
-import Joi from "joi";
-
-const schema = Joi.object({
-  name: Joi.string().alphanum().min(3).max(20).required(),
-
-  phone: Joi.number().integer(),
-
-  email: Joi.string().email({
-    minDomainSegments: 2,
-    tlds: { allow: ["com", "net"] },
-  }),
-}).with("name", "phone");
 
 const contactsPath = path.resolve("models", "./contacts.json");
 
@@ -52,8 +40,6 @@ const removeContact = async (contactId) => {
 
 const addContact = async ({ name, email, phone }) => {
   try {
-    await schema.validateAsync({ name, email, phone }, { abortEarly: false });
-
     const contacts = await listContacts();
     const newContact = {
       id: uuidv4(),
@@ -71,8 +57,6 @@ const addContact = async ({ name, email, phone }) => {
 
 const updateContact = async (contactId, body) => {
   try {
-    await schema.validateAsync(body, { abortEarly: false });
-
     const contacts = await listContacts();
     const findIndex = contacts.findIndex((contact) => contact.id === contactId);
     const updatedContact = contacts.find((contact) => contact.id === contactId);
