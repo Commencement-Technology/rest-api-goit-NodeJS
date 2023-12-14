@@ -46,7 +46,7 @@ async function deleteContact(req, res, next) {
   if (deleteContact) {
     res.json({ message: "contact deleted", status: 200 });
   } else {
-    res.status(404).json({ message: "Not found", status: 404 });
+    throw HttpError(404);
   }
 }
 
@@ -58,13 +58,12 @@ async function editContact(req, res, next) {
   const id = req.params.contactId;
   const updatedContact = await updateContact(id, req.body);
   if (Object.keys(req.body).length === 0) {
-    return res.json({ message: "missing fields" });
+    throw HttpError(404, "missing fields");
   }
-  if (updateContact) {
-    res.status(201).json(updatedContact);
-  } else {
-    res.json({ message: "Not found" });
+  if (!updatedContact) {
+    throw HttpError(404, "Not found");
   }
+  res.status(201).json(updatedContact);
 }
 
 export default {

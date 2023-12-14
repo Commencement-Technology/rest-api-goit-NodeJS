@@ -60,6 +60,7 @@ const updateContact = async (contactId, body) => {
     const contacts = await listContacts();
     const findIndex = contacts.findIndex((contact) => contact.id === contactId);
     const updatedContact = contacts.find((contact) => contact.id === contactId);
+
     if (!updatedContact) {
       return null;
     }
