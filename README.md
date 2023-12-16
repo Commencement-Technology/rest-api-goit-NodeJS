@@ -7,11 +7,11 @@ This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-3399
 
 ## Table of Contents
 
-- [Homework2](#Homework2:HTTPRequestsandJSONContactManagement)
-- [Homework3](#Homework3)
-- [Homework4](#Homework4)
-- [Homework5](#Homework5)
-- [Homework6](#Homework6)
+- [Homework2](#homework2-http-requests-and-json-contact-management)
+- [Homework3](#homework3)
+- [Homework4](#homework4)
+- [Homework5](#homework5)
+- [Homework6](#homework6)
 
 ## Homework2: HTTP Requests and JSON Contact Management
 
