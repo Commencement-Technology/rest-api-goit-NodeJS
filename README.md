@@ -75,6 +75,10 @@ If you encounter any issues or have suggestions, please [open an issue](https://
 
 I welcome feedback and suggestions from users to improve the application's functionality and user experience.
 
+## Acknowledgments
+
+I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/us/) for their unwavering guidance and support during my enriching journey through the Fullstack Bootcamp. This comprehensive 10-month program has equipped me with valuable skills across various modules, and I am particularly grateful for the in-depth learning experience in Node.js, which serves as the final module in this transformative bootcamp.
+
 ## Languages and Tools:
 
 <div align="center">  
