@@ -5,6 +5,14 @@
 
 This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) REST API project developed during my full-stack bootcamp. The project spans from the 2nd homework assignment to the 6th and serves as a practical implementation of the concepts covered in the bootcamp. It provides a foundation for building scalable and robust RESTful web services.
 
+## Table of Contents
+
+- [Homework2](#Homework 2)
+- [Homework3](#Homework 3)
+- [Homework4](#Homework 4)
+- [Homework5](#Homework 5)
+- [Homework6](#Homework 6)
+
 ## Homework 2: HTTP Requests and JSON Contact Management
 
 The second homework assignment focuses on working with HTTP requests in a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) environment. The project involves managing a ![Alt text](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) file containing contacts. The application allows performing various operations on the contacts, including:
