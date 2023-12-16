@@ -13,7 +13,7 @@ This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-3399
 - [Homework5](#Homework 5)
 - [Homework6](#Homework 6)
 
-## Homework 2: HTTP Requests and JSON Contact Management
+## Homework2: HTTP Requests and JSON Contact Management
 
 The second homework assignment focuses on working with HTTP requests in a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) environment. The project involves managing a ![Alt text](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) file containing contacts. The application allows performing various operations on the contacts, including:
 - **Get All Contacts (GET):** Retrieve a list of all contacts.
