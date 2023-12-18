@@ -1,34 +1,26 @@
-# Fullstack Bootcamp Project
+# Node.js and MongoDB CRUD Backend
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/Alexandrbig1/rest-api-goit-NodeJS)](https://github.com/Alexandrbig1/rest-api-goit-NodeJS/commits/main)
 
-This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) REST API project developed during my full-stack bootcamp. The project spans from the 2nd homework assignment to the 6th and serves as a practical implementation of the concepts covered in the bootcamp. It provides a foundation for building scalable and robust RESTful web services.
+This repository contains the backend code for a simple ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) application that performs CRUD operations on a ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) database using ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white).
 
-## Table of Contents
+## Homework3: Node.js, MongoDB, and Mongoose CRUD Backend
 
-- [Homework2](#homework2-http-requests-and-json-contact-management)
-- [Homework3](#homework3)
-- [Homework4](#homework4)
-- [Homework5](#homework5)
-- [Homework6](#homework6)
-
-## Homework2: HTTP Requests and JSON Contact Management
-
-The second homework assignment focuses on working with HTTP requests in a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) environment. The project involves managing a ![Alt text](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) file containing contacts. The application allows performing various operations on the contacts, including:
+The third homework assignment builds upon the previous project, now incorporating MongoDB with Mongoose for data persistence. The application manages contacts stored in a MongoDB database and allows users to perform various operations on the contacts. The supported CRUD operations include:
 - **Get All Contacts (GET):** Retrieve a list of all contacts.
 - **Get Contact by ID (GET):** Retrieve a specific contact by its ID.
 - **Add New Contact (POST):** Add a new contact to the list.
 - **Update Existing Contact (PUT):** Update an existing contact's information.
+- **Patch Existing Contact (PATCH):** Partially update an existing contact's information.
 - **Delete Existing Contact (DELETE):** Remove an existing contact from the list.
 
 ## Technologies Used
 
-- ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
-- **Express.js:** A web application framework for building RESTful APIs.
-- **Cors:** Middleware for handling Cross-Origin Resource Sharing in Express.js applications.
-- **Morgan:** HTTP request logger middleware for Express.js.
-- **UUID:** Used for generating unique IDs for various purposes.
+- ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+- ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white)
+- ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white)
 
 ## Getting Started
 
