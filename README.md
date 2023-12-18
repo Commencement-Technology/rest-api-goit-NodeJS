@@ -8,7 +8,7 @@ This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-3399
 ## Table of Contents
 
 - [Homework2](#homework2-http-requests-and-json-contact-management)
-- [Homework3](#homework3)
+- [Homework3](#homework3-node-js-mongodb-and-mongoose-crud-backend)
 - [Homework4](#homework4)
 - [Homework5](#homework5)
 - [Homework6](#homework6)
@@ -29,6 +29,23 @@ The second homework assignment focuses on working with HTTP requests in a ![Alt 
 - **Cors:** Middleware for handling Cross-Origin Resource Sharing in Express.js applications.
 - **Morgan:** HTTP request logger middleware for Express.js.
 - **UUID:** Used for generating unique IDs for various purposes.
+
+## Homework3: Node.js, MongoDB, and Mongoose CRUD Backend
+
+The third homework assignment builds upon the previous project, now incorporating MongoDB with Mongoose for data persistence. The application manages contacts stored in a MongoDB database and allows users to perform various operations on the contacts. The supported CRUD operations include:
+- **Get All Contacts (GET):** Retrieve a list of all contacts.
+- **Get Contact by ID (GET):** Retrieve a specific contact by its ID.
+- **Add New Contact (POST):** Add a new contact to the list.
+- **Update Existing Contact (PUT):** Update an existing contact's information.
+- **Patch Existing Contact (PATCH):** Partially update an existing contact's information.
+- **Delete Existing Contact (DELETE):** Remove an existing contact from the list.
+
+## Technologies Used
+
+- ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+- ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white)
+- ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white)
 
 ## Getting Started
 
@@ -84,6 +101,8 @@ I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/u
 <div align="center">  
 <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>
 <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
+<a href="https://www.mongodb.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="50" /></a>
+<a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" /></a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
 </div>
 
