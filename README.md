@@ -25,7 +25,7 @@ The second homework assignment focuses on working with HTTP requests in a ![Alt 
 ## Technologies Used
 
 - ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
-- **Express.js:** A web application framework for building RESTful APIs.
+- ![Alt text](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
 - **Cors:** Middleware for handling Cross-Origin Resource Sharing in Express.js applications.
 - **Morgan:** HTTP request logger middleware for Express.js.
 - **UUID:** Used for generating unique IDs for various purposes.
