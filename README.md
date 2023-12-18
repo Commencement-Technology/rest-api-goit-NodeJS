@@ -20,6 +20,7 @@ The second homework assignment focuses on working with HTTP requests in a ![Alt 
 - **Get Contact by ID (GET):** Retrieve a specific contact by its ID.
 - **Add New Contact (POST):** Add a new contact to the list.
 - **Update Existing Contact (PUT):** Update an existing contact's information.
+- **Patch Existing Contact (PATCH):** Partially update an existing contact's information.
 - **Delete Existing Contact (DELETE):** Remove an existing contact from the list.
 
 ## Technologies Used
@@ -82,7 +83,7 @@ Follow these instructions to set up the project on your local machine for develo
 - **GET /contacts/:contactId:** Retrieve a specific contact by ID.
 - **POST /contacts:** Add a new contact.
 - **PUT /contacts/:contactId:** Update an existing contact.
-- **Patch /contacts/:contactId:** Partially update an existing contact's information.
+- **PATCH /contacts/:contactId:** Partially update an existing contact's information.
 - **DELETE /contacts/:contactId:** Delete an existing contact.
 
 ## Issues
