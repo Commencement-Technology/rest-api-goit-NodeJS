@@ -2,6 +2,10 @@
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/Alexandrbig1/rest-api-goit-NodeJS)](https://github.com/Alexandrbig1/rest-api-goit-NodeJS/commits/main)
+[![Node.js Version](https://img.shields.io/badge/Node.js-v18.18.0-green)](https://nodejs.org/)
+[![Express.js Version](https://img.shields.io/badge/Express.js-v4.18.2-blue)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-v6.3.0-brightgreen)](https://www.mongodb.com/)
+[![Mongoose Version](https://img.shields.io/badge/Mongoose-v8.0.3-brightgreen)](https://mongoosejs.com/)
 
 This repository contains the backend code for a simple ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) application that performs CRUD operations on a ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) database using ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white).
 
@@ -53,12 +57,12 @@ Follow these instructions to set up the project on your local machine for develo
     
 ## API Endpoints
 
-- **GET /contacts:** Retrieve all contacts.
-- **GET /contacts/:contactId:** Retrieve a specific contact by ID.
-- **POST /contacts:** Add a new contact.
-- **PUT /contacts/:contactId:** Update an existing contact.
-- **PATCH /contacts/:contactId/favorite:** Partially update an existing contact's information.
-- **DELETE /contacts/:contactId:** Delete an existing contact.
+- **GET /api/contacts:** Retrieve all contacts.
+- **GET /api/contacts/:contactId:** Retrieve a specific contact by ID.
+- **POST /api/contacts:** Add a new contact.
+- **PUT /api/contacts/:contactId:** Update an existing contact.
+- **PATCH /api/contacts/:contactId/favorite:** Partially update an existing contact's information.
+- **DELETE /api/contacts/:contactId:** Delete an existing contact.
 
 ## Issues
 
