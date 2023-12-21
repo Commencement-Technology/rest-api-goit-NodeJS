@@ -57,7 +57,7 @@ Follow these instructions to set up the project on your local machine for develo
 - **GET /contacts/:contactId:** Retrieve a specific contact by ID.
 - **POST /contacts:** Add a new contact.
 - **PUT /contacts/:contactId:** Update an existing contact.
-- **PATCH /contacts/:contactId:** Partially update an existing contact's information.
+- **PATCH /contacts/:contactId/favorite:** Partially update an existing contact's information.
 - **DELETE /contacts/:contactId:** Delete an existing contact.
 
 ## Issues
