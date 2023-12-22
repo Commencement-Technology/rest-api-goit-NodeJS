@@ -36,15 +36,6 @@ const contactsEditValidation = Joi.object({
 });
 
 const contactsFavoriteValidation = Joi.object({
-  name: Joi.string().alphanum().min(3).max(20),
-
-  email: Joi.string().email({
-    minDomainSegments: 2,
-    tlds: { allow: ["com", "net"] },
-  }),
-
-  phone: Joi.number().integer(),
-
   favorite: Joi.boolean().required().messages({
     "any.required": "missing field favorite",
   }),

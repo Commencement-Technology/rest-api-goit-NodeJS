@@ -1,11 +1,6 @@
 import { HttpError } from "../helpers/index.js";
 import { ctrlWrapper } from "../decorators/index.js";
 import Contact from "../models/Contact.js";
-import {
-  newContactValidation,
-  contactsEditValidation,
-  contactsFavoriteValidation,
-} from "../schemas/contacts-validation.js";
 
 async function getAllContacts(req, res, next) {
   const contacts = await Contact.find();
@@ -27,10 +22,6 @@ async function getContactsById(req, res, next) {
 }
 
 async function addNewContact(req, res, next) {
-  const { error } = newContactValidation.validate(req.body);
-  if (error) {
-    throw HttpError(400, error.message);
-  }
   const newContact = await Contact.create(req.body);
   console.log(newContact);
   res.status(201).json(newContact);
@@ -48,10 +39,6 @@ async function deleteContact(req, res, next) {
 }
 
 async function editContact(req, res, next) {
-  const { error } = contactsEditValidation.validate(req.body);
-  if (error) {
-    throw HttpError(400, error.message);
-  }
   const id = req.params.contactId;
   const updatedContact = await Contact.findByIdAndUpdate(id, req.body, {
     new: true,
@@ -63,10 +50,6 @@ async function editContact(req, res, next) {
 }
 
 async function updateContact(req, res, next) {
-  const { error } = contactsFavoriteValidation.validate(req.body);
-  if (error) {
-    throw HttpError(400, error.message);
-  }
   const id = req.params.contactId;
   const updatedContact = await Contact.findByIdAndUpdate(id, req.body, {
     new: true,
