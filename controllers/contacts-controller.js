@@ -23,14 +23,12 @@ async function getContactsById(req, res, next) {
 
 async function addNewContact(req, res, next) {
   const newContact = await Contact.create(req.body);
-  console.log(newContact);
   res.status(201).json(newContact);
 }
 
 async function deleteContact(req, res, next) {
   const id = req.params.contactId;
   const deleteContact = await Contact.findByIdAndDelete(id);
-  console.log(deleteContact);
   if (deleteContact) {
     res.json({ message: "contact deleted", status: 200 });
   } else {
