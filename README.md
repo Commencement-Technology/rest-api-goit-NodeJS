@@ -1,5 +1,4 @@
-# Fullstack Bootcamp Project
-
+# Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/Alexandrbig1/rest-api-goit-NodeJS)](https://github.com/Alexandrbig1/rest-api-goit-NodeJS/commits/main)
@@ -7,20 +6,13 @@
 [![Express.js Version](https://img.shields.io/badge/Express.js-v4.18.2-blue)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-v6.3.0-brightgreen)](https://www.mongodb.com/)
 [![Mongoose Version](https://img.shields.io/badge/Mongoose-v8.0.3-brightgreen)](https://mongoosejs.com/)
+[![JWT](https://img.shields.io/badge/JSON%20Web%20Token-v9.0.2-brightgreen)](https://jwt.io/)
 
-This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) REST API project developed during my full-stack bootcamp. The project spans from the 2nd homework assignment to the 6th and serves as a practical implementation of the concepts covered in the bootcamp. It provides a foundation for building scalable and robust RESTful web services.
+## Homework4: Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
 
-## Table of Contents
+This is the fourth homework assignment in the Fullstack Bootcamp, building upon the previous projects that focused on HTTP requests, ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) contact management, and ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) integration. This module introduces authentication with ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white) (JWT) and enhances the contact management system with additional features.
 
-- [Homework2](#homework2-http-requests-and-json-contact-management)
-- [Homework3](#homework3-nodejs-mongodb-and-mongoose-crud-backend)
-- [Homework4](#homework4)
-- [Homework5](#homework5)
-- [Homework6](#homework6)
-
-## Homework2: HTTP Requests and JSON Contact Management
-
-The second homework assignment focuses on working with HTTP requests in a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) environment. The project involves managing a ![Alt text](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) file containing contacts. The application allows performing various operations on the contacts, including:
+### Contact Endpoints
 
 - **Get All Contacts (GET):** Retrieve a list of all contacts.
 - **Get Contact by ID (GET):** Retrieve a specific contact by its ID.
@@ -29,31 +21,27 @@ The second homework assignment focuses on working with HTTP requests in a ![Alt 
 - **Patch Existing Contact (PATCH):** Partially update an existing contact's information.
 - **Delete Existing Contact (DELETE):** Remove an existing contact from the list.
 
-## Technologies Used
+### User Endpoints
 
-- ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
-- ![Alt text](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
-- **Cors:** Middleware for handling Cross-Origin Resource Sharing in Express.js applications.
-- **Morgan:** HTTP request logger middleware for Express.js.
-- **UUID:** Used for generating unique IDs for various purposes.
+- **Register a New User (POST):** Register a new user with email and password fields (required).
+- **Login (POST):** Login and obtain a JSON Web Token (JWT) for authentication.
+- **Logout (POST):** Logout the user.
+- **Retrieve Current User Information (GET):** Retrieve information about the currently logged-in user.
+- **Update User Subscription (PATCH):** Update the user's subscription level (options: 'starter', 'pro', 'business').
 
-## Homework3: Node.js, MongoDB, and Mongoose CRUD Backend
+### Pagination and Filtering
 
-The third homework assignment builds upon the previous project, now incorporating ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) with ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white) for data persistence. The application manages contacts stored in a MongoDB database and allows users to perform various operations on the contacts. The supported CRUD operations include:
-
-- **Get All Contacts (GET):** Retrieve a list of all contacts.
-- **Get Contact by ID (GET):** Retrieve a specific contact by its ID.
-- **Add New Contact (POST):** Add a new contact to the list.
-- **Update Existing Contact (PUT):** Update an existing contact's information.
-- **Patch Existing Contact (PATCH):** Partially update an existing contact's information.
-- **Delete Existing Contact (DELETE):** Remove an existing contact from the list.
+- **Pagination (GET):** Retrieve paginated contacts.
+- **Filter by Favorite (GET):** Retrieve contacts marked as favorites.
 
 ## Technologies Used
 
-- ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)
-- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-- ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white)
-- ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white)
+- ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
+- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white): A NoSQL database for data persistence.
+- ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white): An ODM (Object Data Modeling) library for MongoDB and Node.js.
+- ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white): Used for user authentication.
+- ![Express.js](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
+- ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white): Data interchange format used in the project.
 
 ## Getting Started
 
@@ -67,31 +55,26 @@ Follow these instructions to set up the project on your local machine for develo
 ## Installing
 
 1. Clone the repository to your local machine.
-   ```bash
-   git clone https://github.com/Alexandrbig1/nodejs-rest-api-homework.git
-   ```
+    ``` bash
+    git clone https://github.com/Alexandrbig1/nodejs-rest-api-homework.git
 1. Navigate to the project folder.
-   ```bash
-   cd nodejs-rest-api-homework
-   ```
+    ``` bash
+    cd nodejs-rest-api-homework
 1. Install dependencies.
-   ```bash
-   npm install
-   ```
+    ``` bash
+    npm install
 
 ## Running the Application
-
 - **Production Mode:**
-  ```bash
-  npm start
-  ```
+    ``` bash
+    npm start
 - **Development Mode with Nodemon:**
-  ```bash
-  npm run dev
-
-  ```
-
+    ``` bash
+    npm run dev
+    
 ## API Endpoints
+
+### Contact endpoints
 
 - **GET /api/contacts:** Retrieve all contacts.
 - **GET /api/contacts/:contactId:** Retrieve a specific contact by ID.
@@ -99,6 +82,18 @@ Follow these instructions to set up the project on your local machine for develo
 - **PUT /api/contacts/:contactId:** Update an existing contact.
 - **PATCH /api/contacts/:contactId/favorite:** Partially update an existing contact's information.
 - **DELETE /api/contacts/:contactId:** Delete an existing contact.
+- **Pagination:**
+   - `GET /api/contacts?page=<page_number>&limit=<page_size>` - Retrieve paginated contacts.
+- **Filter by Favorite:**
+   - `GET /api/contacts?favorite=true` - Retrieve contacts marked as favorites.
+
+### User endpoints
+
+- **POST /api/users/register:** Register a new user with email and password fields (required).
+- **POST /api/users/login:** Login and obtain a JSON Web Token (JWT) for authentication.
+- **POST /api/users/logout:** Logout the user.
+- **GET /api/users/current:** Retrieve information about the currently logged-in user.
+- **PATCH /api/users:** Update the user's subscription level (options: 'starter', 'pro', 'business').
 
 ## Issues
 
@@ -110,7 +105,7 @@ I welcome feedback and suggestions from users to improve the application's funct
 
 ## Acknowledgments
 
-I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/us/) for their unwavering guidance and support during my enriching journey through the Fullstack Bootcamp. This comprehensive 10-month program has equipped me with valuable skills across various modules, and I am particularly grateful for the in-depth learning experience in Node.js, which serves as the final module in this transformative bootcamp.
+Big thanks to [@GoIT](https://goit.global/us/) for their valuable guidance and support during the completion of the 3rd Node.js homework. 
 
 ## Languages and Tools:
 
