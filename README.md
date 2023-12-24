@@ -15,7 +15,7 @@ This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-3399
 
 - [Homework2](#homework2-http-requests-and-json-contact-management)
 - [Homework3](#homework3-nodejs-mongodb-and-mongoose-crud-backend)
-- [Homework4](#homework4)
+- [Homework4](#homework4-nodejs-mongodb-mongoose-and-jwt-authentication-with-extended-contact-management)
 - [Homework5](#homework5)
 - [Homework6](#homework6)
 
