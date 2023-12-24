@@ -7,6 +7,7 @@
 [![Express.js Version](https://img.shields.io/badge/Express.js-v4.18.2-blue)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-v6.3.0-brightgreen)](https://www.mongodb.com/)
 [![Mongoose Version](https://img.shields.io/badge/Mongoose-v8.0.3-brightgreen)](https://mongoosejs.com/)
+[![JWT](https://img.shields.io/badge/JSON%20Web%20Token-v9.0.2-brightgreen)](https://jwt.io/)
 
 This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) REST API project developed during my full-stack bootcamp. The project spans from the 2nd homework assignment to the 6th and serves as a practical implementation of the concepts covered in the bootcamp. It provides a foundation for building scalable and robust RESTful web services.
 
@@ -61,7 +62,7 @@ The third homework assignment builds upon the previous project, now incorporatin
 - ![Express.js](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
 - ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white): Data interchange format used in the project.
 
-## Homework4: Node.js, MongoDB, and Mongoose CRUD Backend
+## Homework4: Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
 
 The fourth homework assignment extends the capabilities developed in previous projects, specifically focusing on HTTP requests, ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) contact management, and ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) integration. Building upon this foundation, the current module introduces a robust authentication system using ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white) (JWT) and enhances the contact management system with additional features to provide a more comprehensive and secure user experience.
 
@@ -147,7 +148,6 @@ Follow these instructions to set up the project on your local machine for develo
 - **PUT /api/contacts/:contactId:** Update an existing contact.
 - **PATCH /api/contacts/:contactId/favorite:** Partially update an existing contact's information.
 - **DELETE /api/contacts/:contactId:** Delete an existing contact.
-- 
 - **Pagination:**
    - `GET /api/contacts?page=<page_number>&limit=<page_size>` - Retrieve paginated contacts.
 - **Filter by Favorite:**
