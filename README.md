@@ -18,6 +18,10 @@ This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-3399
 - [Homework4](#homework4-nodejs-mongodb-mongoose-and-jwt-authentication-with-extended-contact-management)
 - [Homework5](#homework5)
 - [Homework6](#homework6)
+- [Getting Started](#getting-started)
+- [API Endpoints](#api-endpoints)
+- [Issues](#issues)
+- [Acknowledgments](#acknowledgments)
 
 ## Homework2: HTTP Requests and JSON Contact Management
 
