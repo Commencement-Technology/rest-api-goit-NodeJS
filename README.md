@@ -36,19 +36,6 @@ This is the fourth homework assignment in the Fullstack Bootcamp, building upon 
 - **(POST) `/users/logout`:** Logout the user.
 - **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
 
-### User Endpoints
-
-- **Register a New User (POST):** Register a new user with email and password fields (required).
-- **Login (POST):** Login and obtain a JSON Web Token (JWT) for authentication.
-- **Logout (POST):** Logout the user.
-- **Retrieve Current User Information (GET):** Retrieve information about the currently logged-in user.
-- **Update User Subscription (PATCH):** Update the user's subscription level (options: 'starter', 'pro', 'business').
-
-### Pagination and Filtering
-
-- **Pagination (GET):** Retrieve paginated contacts.
-- **Filter by Favorite (GET):** Retrieve contacts marked as favorites.
-
 ## Technologies Used
 
 - ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
