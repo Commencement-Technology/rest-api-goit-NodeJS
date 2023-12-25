@@ -1,4 +1,4 @@
-# Fullstack Bootcamp Project
+# Fullstack Bootcamp Node.js Backend Project
 
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
@@ -23,14 +23,13 @@ This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-3399
 
 The second homework assignment focuses on working with HTTP requests in a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) environment. The project involves managing a ![Alt text](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) file containing contacts. The application allows performing various operations on the contacts, including:
 
-### API Endpoints
+## API Endpoints
 
-- **Get All Contacts (GET):** Retrieve a list of all contacts.
-- **Get Contact by ID (GET):** Retrieve a specific contact by its ID.
-- **Add New Contact (POST):** Add a new contact to the list.
-- **Update Existing Contact (PUT):** Update an existing contact's information.
-- **Patch Existing Contact (PATCH):** Partially update an existing contact's information.
-- **Delete Existing Contact (DELETE):** Remove an existing contact from the list.
+- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
+- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
+- **(POST) `/api/contacts`:** Add a new contact to the list.
+- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
+- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
 
 ## Technologies Used
 
@@ -45,14 +44,14 @@ The second homework assignment focuses on working with HTTP requests in a ![Alt 
 
 The third homework assignment builds upon the previous project, now incorporating ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) with ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white) for data persistence. The application manages contacts stored in a MongoDB database and allows users to perform various operations on the contacts. The supported CRUD operations include:
 
-### API Endpoints
+## API Endpoints
 
-- **Get All Contacts (GET):** Retrieve a list of all contacts.
-- **Get Contact by ID (GET):** Retrieve a specific contact by its ID.
-- **Add New Contact (POST):** Add a new contact to the list.
-- **Update Existing Contact (PUT):** Update an existing contact's information.
-- **Patch Existing Contact (PATCH):** Partially update an existing contact's information.
-- **Delete Existing Contact (DELETE):** Remove an existing contact from the list.
+- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
+- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
+- **(POST) `/api/contacts`:** Add a new contact to the list.
+- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
+- **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
+- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
 
 ## Technologies Used
 
@@ -66,32 +65,29 @@ The third homework assignment builds upon the previous project, now incorporatin
 
 The fourth homework assignment extends the capabilities developed in previous projects, specifically focusing on HTTP requests, ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) contact management, and ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) integration. Building upon this foundation, the current module introduces a robust authentication system using ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white) (JWT) and enhances the contact management system with additional features to provide a more comprehensive and secure user experience.
 
-### API Endpoints
+## API Endpoints
 
-1. **User Registration:**
-   - `POST /users/register` - Register a new user.
+### Contact endpoints
 
-2. **User Login:**
-   - `POST /users/login` - Login and obtain a JWT.
+- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
+- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
+- **(POST) `/api/contacts`:** Add a new contact to the list.
+- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
+- **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
+- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
 
-3. **User Logout:**
-   - `POST /users/logout` - Logout the user.
+### Additional Contact Endpoints
 
-4. **Current User Information:**
-   - `GET /users/current` - Retrieve information about the currently logged-in user.
+- **(GET) `/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(PATCH) `/users`:** Update the user's subscription level.
 
-5. **Contact Management:**
-   - Existing CRUD endpoints for managing contacts as in Homework 3.
+### User endpoints
 
-6. **Pagination:**
-   - `GET /contacts?page=<page_number>&limit=<page_size>` - Retrieve paginated contacts.
-
-7. **Filter by Favorite:**
-   - `GET /contacts?favorite=true` - Retrieve contacts marked as favorites.
-
-8. **Subscription Update:**
-   - `PATCH /users` - Update the user's subscription level.
-
+- **(POST) `/users/register`:** Register a new user.
+- **(POST) `/users/login`:** Login and obtain a JWT.
+- **(POST) `/users/logout`:** Logout the user.
+- **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
 
 ## Technologies Used
 
@@ -142,24 +138,25 @@ Follow these instructions to set up the project on your local machine for develo
 
 ### Contact endpoints
 
-- **GET /api/contacts:** Retrieve all contacts.
-- **GET /api/contacts/:contactId:** Retrieve a specific contact by ID.
-- **POST /api/contacts:** Add a new contact.
-- **PUT /api/contacts/:contactId:** Update an existing contact.
-- **PATCH /api/contacts/:contactId/favorite:** Partially update an existing contact's information.
-- **DELETE /api/contacts/:contactId:** Delete an existing contact.
-- **Pagination:**
-   - `GET /api/contacts?page=<page_number>&limit=<page_size>` - Retrieve paginated contacts.
-- **Filter by Favorite:**
-   - `GET /api/contacts?favorite=true` - Retrieve contacts marked as favorites.
+- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
+- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
+- **(POST) `/api/contacts`:** Add a new contact to the list.
+- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
+- **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
+- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
+
+### Additional Contact Endpoints
+
+- **(GET) `/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(PATCH) `/users`:** Update the user's subscription level.
 
 ### User endpoints
 
-- **POST /api/users/register:** Register a new user with email and password fields (required).
-- **POST /api/users/login:** Login and obtain a JSON Web Token (JWT) for authentication.
-- **POST /api/users/logout:** Logout the user.
-- **GET /api/users/current:** Retrieve information about the currently logged-in user.
-- **PATCH /api/users:** Update the user's subscription level (options: 'starter', 'pro', 'business').
+- **(POST) `/users/register`:** Register a new user.
+- **(POST) `/users/login`:** Login and obtain a JWT.
+- **(POST) `/users/logout`:** Logout the user.
+- **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
 
 ## Issues
 
