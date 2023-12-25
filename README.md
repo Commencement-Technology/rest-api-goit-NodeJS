@@ -12,14 +12,29 @@
 
 This is the fourth homework assignment in the Fullstack Bootcamp, building upon the previous projects that focused on HTTP requests, ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) contact management, and ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) integration. This module introduces authentication with ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white) (JWT) and enhances the contact management system with additional features.
 
-### Contact Endpoints
+## API Endpoints
 
-- **Get All Contacts (GET):** Retrieve a list of all contacts.
-- **Get Contact by ID (GET):** Retrieve a specific contact by its ID.
-- **Add New Contact (POST):** Add a new contact to the list.
-- **Update Existing Contact (PUT):** Update an existing contact's information.
-- **Patch Existing Contact (PATCH):** Partially update an existing contact's information.
-- **Delete Existing Contact (DELETE):** Remove an existing contact from the list.
+### Contact endpoints
+
+- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
+- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
+- **(POST) `/api/contacts`:** Add a new contact to the list.
+- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
+- **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
+- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
+
+### Additional Contact Endpoints
+
+- **(GET) `/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(PATCH) `/users`:** Update the user's subscription level.
+
+### User endpoints
+
+- **(POST) `/users/register`:** Register a new user.
+- **(POST) `/users/login`:** Login and obtain a JWT.
+- **(POST) `/users/logout`:** Logout the user.
+- **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
 
 ### User Endpoints
 
@@ -42,58 +57,6 @@ This is the fourth homework assignment in the Fullstack Bootcamp, building upon 
 - ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white): Used for user authentication.
 - ![Express.js](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
 - ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white): Data interchange format used in the project.
-
-## Getting Started
-
-Follow these instructions to set up the project on your local machine for development and testing purposes.
-
-## Requirements
-
-- Node.js installed
-- NPM (Node Package Manager) installed
-
-## Installing
-
-1. Clone the repository to your local machine.
-    ``` bash
-    git clone https://github.com/Alexandrbig1/nodejs-rest-api-homework.git
-1. Navigate to the project folder.
-    ``` bash
-    cd nodejs-rest-api-homework
-1. Install dependencies.
-    ``` bash
-    npm install
-
-## Running the Application
-- **Production Mode:**
-    ``` bash
-    npm start
-- **Development Mode with Nodemon:**
-    ``` bash
-    npm run dev
-    
-## API Endpoints
-
-### Contact endpoints
-
-- **GET /api/contacts:** Retrieve all contacts.
-- **GET /api/contacts/:contactId:** Retrieve a specific contact by ID.
-- **POST /api/contacts:** Add a new contact.
-- **PUT /api/contacts/:contactId:** Update an existing contact.
-- **PATCH /api/contacts/:contactId/favorite:** Partially update an existing contact's information.
-- **DELETE /api/contacts/:contactId:** Delete an existing contact.
-- **Pagination:**
-   - `GET /api/contacts?page=<page_number>&limit=<page_size>` - Retrieve paginated contacts.
-- **Filter by Favorite:**
-   - `GET /api/contacts?favorite=true` - Retrieve contacts marked as favorites.
-
-### User endpoints
-
-- **POST /api/users/register:** Register a new user with email and password fields (required).
-- **POST /api/users/login:** Login and obtain a JSON Web Token (JWT) for authentication.
-- **POST /api/users/logout:** Logout the user.
-- **GET /api/users/current:** Retrieve information about the currently logged-in user.
-- **PATCH /api/users:** Update the user's subscription level (options: 'starter', 'pro', 'business').
 
 ## Issues
 
