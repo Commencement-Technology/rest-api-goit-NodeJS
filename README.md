@@ -19,7 +19,7 @@ This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-3399
 - [Homework5](#homework5)
 - [Homework6](#homework6)
 - [Getting Started](#getting-started)
-- [API Endpoints](#api-endpoints)
+- [API Endpoints](#project-api-endpoints)
 - [Issues](#issues)
 - [Acknowledgments](#acknowledgments)
 
@@ -138,7 +138,7 @@ Follow these instructions to set up the project on your local machine for develo
 
   ```
 
-## API Endpoints
+## Project API Endpoints
 
 ### Contact endpoints
 
