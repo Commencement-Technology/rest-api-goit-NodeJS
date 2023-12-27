@@ -1,5 +1,7 @@
 import { Schema, model } from "mongoose";
-// import { handleSaveError, addUpdateSettings } from "./hooks.js";
+import { handleSaveError, addUpdateSettings } from "./hooks.js";
+
+const emailRegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const userSchema = new Schema(
   {
@@ -9,6 +11,7 @@ const userSchema = new Schema(
     },
     email: {
       type: String,
+      match: emailRegExp,
       required: [true, "Email is required"],
       unique: true,
     },
@@ -22,11 +25,11 @@ const userSchema = new Schema(
   { versionKey: false, timestamps: true }
 );
 
-// userSchema.post("save", handleSaveError);
+userSchema.post("save", handleSaveError);
 
-// userSchema.pre("findOneAndUpdate", addUpdateSettings);
+userSchema.pre("findOneAndUpdate", addUpdateSettings);
 
-// userSchema.post("findOneAndUpdate", handleSaveError);
+userSchema.post("findOneAndUpdate", handleSaveError);
 
 const User = model("user", userSchema);
 

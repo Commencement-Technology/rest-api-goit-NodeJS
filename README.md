@@ -1,4 +1,5 @@
 # Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
+
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/Alexandrbig1/rest-api-goit-NodeJS)](https://github.com/Alexandrbig1/rest-api-goit-NodeJS/commits/main)
@@ -31,8 +32,8 @@ This is the fourth homework assignment in the Fullstack Bootcamp, building upon 
 
 ### User endpoints
 
-- **(POST) `/users/register`:** Register a new user.
-- **(POST) `/users/login`:** Login and obtain a JWT.
+- **(POST) `/users/signup`:** Register a new user.
+- **(POST) `/users/signin`:** Login and obtain a JWT.
 - **(POST) `/users/logout`:** Logout the user.
 - **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
 
@@ -55,7 +56,7 @@ I welcome feedback and suggestions from users to improve the application's funct
 
 ## Acknowledgments
 
-Big thanks to [@GoIT](https://goit.global/us/) for their valuable guidance and support during the completion of the 3rd Node.js homework. 
+Big thanks to [@GoIT](https://goit.global/us/) for their valuable guidance and support during the completion of the 3rd Node.js homework.
 
 ## Languages and Tools:
 
