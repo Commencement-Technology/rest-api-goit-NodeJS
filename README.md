@@ -88,8 +88,8 @@ The fourth homework assignment extends the capabilities developed in previous pr
 
 ### User endpoints
 
-- **(POST) `/users/register`:** Register a new user.
-- **(POST) `/users/login`:** Login and obtain a JWT.
+- **(POST) `/users/signup`:** Register a new user.
+- **(POST) `/users/signin`:** Login and obtain a JWT.
 - **(POST) `/users/logout`:** Logout the user.
 - **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
 
@@ -157,8 +157,8 @@ Follow these instructions to set up the project on your local machine for develo
 
 ### User endpoints
 
-- **(POST) `/users/register`:** Register a new user.
-- **(POST) `/users/login`:** Login and obtain a JWT.
+- **(POST) `/users/signup`:** Register a new user.
+- **(POST) `/users/signin`:** Login and obtain a JWT.
 - **(POST) `/users/logout`:** Logout the user.
 - **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
 
