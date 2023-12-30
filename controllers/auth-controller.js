@@ -50,6 +50,8 @@ const signIn = async (req, res) => {
 
   const token = jwt.sign(payload, JWT_SECRET, { expiresIn: "23h" });
 
+  await User.findByIdAndUpdate(id, { token });
+
   res.json({
     token,
     user: {
@@ -57,6 +59,13 @@ const signIn = async (req, res) => {
       subscription: "starter",
     },
   });
+};
+
+const logOut = async (req, res) => {
+  const { _id } = req.user;
+  await User.findByIdAndUpdate(_id, { token: "" });
+
+  res.json({ message: "Logout successfull" });
 };
 
 const updateSubscription = async (req, res) => {
@@ -74,8 +83,15 @@ const updateSubscription = async (req, res) => {
   res.json(updatedUser);
 };
 
+const getCurrent = async (req, res) => {
+  const { email, subscription } = req.user;
+  res.json({ email, subscription });
+};
+
 export default {
   signUp: ctrlWrapper(signUp),
   signIn: ctrlWrapper(signIn),
+  getCurrent: ctrlWrapper(getCurrent),
+  logOut: ctrlWrapper(logOut),
   updateSubscription: ctrlWrapper(updateSubscription),
 };
