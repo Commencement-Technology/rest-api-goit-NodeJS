@@ -82,8 +82,8 @@ The fourth homework assignment extends the capabilities developed in previous pr
 
 ### Additional Contact Endpoints
 
-- **(GET) `/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
-- **(GET) `/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
 - **(PATCH) `/users`:** Update the user's subscription level.
 
 ### User endpoints
@@ -151,8 +151,8 @@ Follow these instructions to set up the project on your local machine for develo
 
 ### Additional Contact Endpoints
 
-- **(GET) `/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
-- **(GET) `/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
 - **(PATCH) `/users`:** Update the user's subscription level.
 
 ### User endpoints
