@@ -80,18 +80,18 @@ The fourth homework assignment extends the capabilities developed in previous pr
 - **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
 - **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
 
-### Additional Contact Endpoints
-
-- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
-- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
-- **(PATCH) `/users`:** Update the user's subscription level.
-
 ### User endpoints
 
 - **(POST) `/users/signup`:** Register a new user.
 - **(POST) `/users/signin`:** Login and obtain a JWT.
 - **(POST) `/users/logout`:** Logout the user.
 - **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
+
+### Additional Endpoints
+
+- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(PATCH) `/users`:** Update the user's subscription level.
 
 ## Technologies Used
 
@@ -149,18 +149,18 @@ Follow these instructions to set up the project on your local machine for develo
 - **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
 - **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
 
-### Additional Contact Endpoints
-
-- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
-- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
-- **(PATCH) `/users`:** Update the user's subscription level.
-
 ### User endpoints
 
 - **(POST) `/users/signup`:** Register a new user.
 - **(POST) `/users/signin`:** Login and obtain a JWT.
 - **(POST) `/users/logout`:** Logout the user.
 - **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
+
+### Additional Endpoints
+
+- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(PATCH) `/users`:** Update the user's subscription level.
 
 ## Issues
 
