@@ -56,7 +56,7 @@ I welcome feedback and suggestions from users to improve the application's funct
 
 ## Acknowledgments
 
-Big thanks to [@GoIT](https://goit.global/us/) for their valuable guidance and support during the completion of the 3rd Node.js homework.
+Big thanks to [@GoIT](https://goit.global/us/) for their valuable guidance and support during the completion of the 4th Node.js homework.
 
 ## Languages and Tools:
 
