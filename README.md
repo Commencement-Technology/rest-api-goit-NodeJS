@@ -26,8 +26,8 @@ This is the fourth homework assignment in the Fullstack Bootcamp, building upon 
 
 ### Additional Contact Endpoints
 
-- **(GET) `/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
-- **(GET) `/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
 - **(PATCH) `/users`:** Update the user's subscription level.
 
 ### User endpoints
