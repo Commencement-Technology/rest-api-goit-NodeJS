@@ -9,6 +9,8 @@
 [![Mongoose Version](https://img.shields.io/badge/Mongoose-v8.0.3-brightgreen)](https://mongoosejs.com/)
 [![JWT](https://img.shields.io/badge/JSON%20Web%20Token-v9.0.2-brightgreen)](https://jwt.io/)
 
+This repository contains a ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) REST API project developed during my full-stack bootcamp. The project spans from the 2nd homework assignment to the 6th and serves as a practical implementation of the concepts covered in the bootcamp. It provides a foundation for building scalable and robust RESTful web services.
+
 ## Table of Contents
 
 - [Homework2](#homework2-http-requests-and-json-contact-management)
@@ -148,18 +150,18 @@ Follow these instructions to set up the project on your local machine for develo
 - **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
 - **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
 
-### Additional Contact Endpoints
-
-- **(GET) `/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
-- **(GET) `/contacts?favorite=true`:** Retrieve contacts marked as favorites.
-- **(PATCH) `/users`:** Update the user's subscription level.
-
 ### User endpoints
 
-- **(POST) `/users/signup`:** Register a new user.
-- **(POST) `/users/signin`:** Login and obtain a JWT.
-- **(POST) `/users/logout`:** Logout the user.
-- **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
+- **(POST) `/api/users/signup`:** Register a new user.
+- **(POST) `/api/users/signin`:** Login and obtain a JWT.
+- **(POST) `/api/users/logout`:** Logout the user.
+- **(GET) `/api/users/current`:** Retrieve information about the currently logged-in user.
+
+### Additional Endpoints
+
+- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(PATCH) `/api/users`:** Update the user's subscription level.
 
 ## Issues
 
@@ -171,7 +173,7 @@ I welcome feedback and suggestions from users to improve the application's funct
 
 ## Acknowledgments
 
-Big thanks to [@GoIT](https://goit.global/us/) for their valuable guidance and support during the completion of the 4th Node.js homework.
+I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/us/) for their unwavering guidance and support during my enriching journey through the Fullstack Bootcamp. This comprehensive 10-month program has equipped me with valuable skills across various modules, and I am particularly grateful for the in-depth learning experience in Node.js, which serves as the final module in this transformative bootcamp.
 
 ## Languages and Tools:
 
