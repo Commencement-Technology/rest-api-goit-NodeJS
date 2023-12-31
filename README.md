@@ -1,7 +1,5 @@
 # Fullstack Bootcamp Node.js Backend Project
 
-# Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
-
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/Alexandrbig1/rest-api-goit-NodeJS)](https://github.com/Alexandrbig1/rest-api-goit-NodeJS/commits/main)
