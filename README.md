@@ -106,12 +106,12 @@ The fourth homework assignment extends the capabilities developed in previous pr
 
 Follow these instructions to set up the project on your local machine for development and testing purposes.
 
-## Requirements
+### Requirements
 
 - Node.js installed
 - NPM (Node Package Manager) installed
 
-## Installing
+### Installing
 
 1. Clone the repository to your local machine.
    ```bash
@@ -126,7 +126,7 @@ Follow these instructions to set up the project on your local machine for develo
    npm install
    ```
 
-## Running the Application
+### Running the Application
 
 - **Production Mode:**
   ```bash
