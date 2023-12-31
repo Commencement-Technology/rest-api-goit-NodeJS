@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Fullstack Bootcamp Node.js Backend Project
+=======
+# Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
+>>>>>>> 04-auth
 
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
@@ -9,8 +13,9 @@
 [![Mongoose Version](https://img.shields.io/badge/Mongoose-v8.0.3-brightgreen)](https://mongoosejs.com/)
 [![JWT](https://img.shields.io/badge/JSON%20Web%20Token-v9.0.2-brightgreen)](https://jwt.io/)
 
-This repository contains a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) REST API project developed during my full-stack bootcamp. The project spans from the 2nd homework assignment to the 6th and serves as a practical implementation of the concepts covered in the bootcamp. It provides a foundation for building scalable and robust RESTful web services.
+## Homework4: Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
 
+<<<<<<< HEAD
 ## Table of Contents
 
 - [Homework2](#homework2-http-requests-and-json-contact-management)
@@ -137,6 +142,9 @@ Follow these instructions to set up the project on your local machine for develo
   npm run dev
 
   ```
+=======
+This is the fourth homework assignment in the Fullstack Bootcamp, building upon the previous projects that focused on HTTP requests, ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) contact management, and ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) integration. This module introduces authentication with ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white) (JWT) and enhances the contact management system with additional features.
+>>>>>>> 04-auth
 
 ## Project API Endpoints
 
@@ -149,6 +157,7 @@ Follow these instructions to set up the project on your local machine for develo
 - **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
 - **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
 
+<<<<<<< HEAD
 ### Additional Contact Endpoints
 
 - **(GET) `/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
@@ -161,6 +170,29 @@ Follow these instructions to set up the project on your local machine for develo
 - **(POST) `/users/signin`:** Login and obtain a JWT.
 - **(POST) `/users/logout`:** Logout the user.
 - **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
+=======
+### User endpoints
+
+- **(POST) `/api/users/signup`:** Register a new user.
+- **(POST) `/api/users/signin`:** Login and obtain a JWT.
+- **(POST) `/api/users/logout`:** Logout the user.
+- **(GET) `/api/users/current`:** Retrieve information about the currently logged-in user.
+
+### Additional Endpoints
+
+- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
+- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
+- **(PATCH) `/api/users`:** Update the user's subscription level.
+
+## Technologies Used
+
+- ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
+- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white): A NoSQL database for data persistence.
+- ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white): An ODM (Object Data Modeling) library for MongoDB and Node.js.
+- ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white): Used for user authentication.
+- ![Express.js](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
+- ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white): Data interchange format used in the project.
+>>>>>>> 04-auth
 
 ## Issues
 
@@ -172,7 +204,7 @@ I welcome feedback and suggestions from users to improve the application's funct
 
 ## Acknowledgments
 
-I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/us/) for their unwavering guidance and support during my enriching journey through the Fullstack Bootcamp. This comprehensive 10-month program has equipped me with valuable skills across various modules, and I am particularly grateful for the in-depth learning experience in Node.js, which serves as the final module in this transformative bootcamp.
+Big thanks to [@GoIT](https://goit.global/us/) for their valuable guidance and support during the completion of the 4th Node.js homework.
 
 ## Languages and Tools:
 
@@ -193,6 +225,9 @@ I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/u
 <a href="https://github.com/alexandrbig1" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
+<a href="https://discord.gg/uzM3UNQU" target="_blank">
+<img src="https://img.shields.io/badge/discord-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white" alt="Discord" style="margin-bottom: 5px;" />
+</a>
 <a href="https://stackoverflow.com/users/22484161/alex-smagin" target="_blank">
 <img src=https://img.shields.io/badge/stackoverflow-%23F28032.svg?&style=for-the-badge&logo=stackoverflow&logoColor=white alt=stackoverflow style="margin-bottom: 5px;" />
 </a>
@@ -201,5 +236,8 @@ I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/u
 </a>
 <a href="https://www.behance.net/a1126" target="_blank">
 <img src=https://img.shields.io/badge/behance-%23191919.svg?&style=for-the-badge&logo=behance&logoColor=white alt=behance style="margin-bottom: 5px;" />
-</a>  
+</a>
+<a href="https://www.upwork.com/freelancers/~0117da9f9f588056d2" target="_blank">
+<img src="https://img.shields.io/badge/upwork-%230077B5.svg?&style=for-the-badge&logo=upwork&logoColor=white&color=%23167B02" alt="Upwork" style="margin-bottom: 5px;" />
+</a>
 </div>
