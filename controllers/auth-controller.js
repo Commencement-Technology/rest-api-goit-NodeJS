@@ -76,6 +76,8 @@ const updateSubscription = async (req, res) => {
     { new: true }
   );
 
+  console.log(updatedUser);
+
   if (!updatedUser) {
     throw HttpError(401, "User not found or incorrect login");
   }

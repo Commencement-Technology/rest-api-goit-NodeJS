@@ -28,7 +28,6 @@ async function getAllContacts(req, res, next) {
 async function getContactsById(req, res, next) {
   const { contactId: _id } = req.params;
   const { _id: owner } = req.user;
-
   const contactById = await Contact.findOne({ _id, owner });
   if (contactById) {
     res.json(contactById);
