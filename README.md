@@ -82,16 +82,16 @@ The fourth homework assignment extends the capabilities developed in previous pr
 
 ### User endpoints
 
-- **(POST) `/users/signup`:** Register a new user.
-- **(POST) `/users/signin`:** Login and obtain a JWT.
-- **(POST) `/users/logout`:** Logout the user.
-- **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
+- **(POST) `/api/users/signup`:** Register a new user.
+- **(POST) `/api/users/signin`:** Login and obtain a JWT.
+- **(POST) `/api/users/logout`:** Logout the user.
+- **(GET) `/api/users/current`:** Retrieve information about the currently logged-in user.
 
 ### Additional Endpoints
 
 - **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
 - **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
-- **(PATCH) `/users`:** Update the user's subscription level.
+- **(PATCH) `/api/users`:** Update the user's subscription level.
 
 ## Technologies Used
 
@@ -151,16 +151,16 @@ Follow these instructions to set up the project on your local machine for develo
 
 ### User endpoints
 
-- **(POST) `/users/signup`:** Register a new user.
-- **(POST) `/users/signin`:** Login and obtain a JWT.
-- **(POST) `/users/logout`:** Logout the user.
-- **(GET) `/users/current`:** Retrieve information about the currently logged-in user.
+- **(POST) `/api/users/signup`:** Register a new user.
+- **(POST) `/api/users/signin`:** Login and obtain a JWT.
+- **(POST) `/api/users/logout`:** Logout the user.
+- **(GET) `/api/users/current`:** Retrieve information about the currently logged-in user.
 
 ### Additional Endpoints
 
 - **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
 - **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
-- **(PATCH) `/users`:** Update the user's subscription level.
+- **(PATCH) `/api/users`:** Update the user's subscription level.
 
 ## Issues
 
@@ -193,6 +193,9 @@ I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/u
 <a href="https://github.com/alexandrbig1" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
+<a href="https://discord.gg/uzM3UNQU" target="_blank">
+<img src="https://img.shields.io/badge/discord-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white" alt="Discord" style="margin-bottom: 5px;" />
+</a>
 <a href="https://stackoverflow.com/users/22484161/alex-smagin" target="_blank">
 <img src=https://img.shields.io/badge/stackoverflow-%23F28032.svg?&style=for-the-badge&logo=stackoverflow&logoColor=white alt=stackoverflow style="margin-bottom: 5px;" />
 </a>
@@ -201,5 +204,8 @@ I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/u
 </a>
 <a href="https://www.behance.net/a1126" target="_blank">
 <img src=https://img.shields.io/badge/behance-%23191919.svg?&style=for-the-badge&logo=behance&logoColor=white alt=behance style="margin-bottom: 5px;" />
-</a>  
+</a>
+<a href="https://www.upwork.com/freelancers/~0117da9f9f588056d2" target="_blank">
+<img src="https://img.shields.io/badge/upwork-%230077B5.svg?&style=for-the-badge&logo=upwork&logoColor=white&color=%23167B02" alt="Upwork" style="margin-bottom: 5px;" />
+</a>
 </div>
