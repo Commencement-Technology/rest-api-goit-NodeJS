@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-
 # Fullstack Bootcamp Node.js Backend Project
 
-=======
-
 # Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
-
-> > > > > > > 04-auth
 
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
@@ -16,10 +10,6 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-v6.3.0-brightgreen)](https://www.mongodb.com/)
 [![Mongoose Version](https://img.shields.io/badge/Mongoose-v8.0.3-brightgreen)](https://mongoosejs.com/)
 [![JWT](https://img.shields.io/badge/JSON%20Web%20Token-v9.0.2-brightgreen)](https://jwt.io/)
-
-## Homework4: Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
-
-<<<<<<< HEAD
 
 ## Table of Contents
 
@@ -148,11 +138,6 @@ Follow these instructions to set up the project on your local machine for develo
   npm run dev
 
   ```
-
-  =======
-  This is the fourth homework assignment in the Fullstack Bootcamp, building upon the previous projects that focused on HTTP requests, ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) contact management, and ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) integration. This module introduces authentication with ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white) (JWT) and enhances the contact management system with additional features.
-
-  > > > > > > > 04-auth
 
 ## Project API Endpoints
 
