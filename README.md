@@ -102,6 +102,10 @@ The fourth homework assignment extends the capabilities developed in previous pr
 - ![Express.js](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
 - ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white): Data interchange format used in the project.
 
+## Homework5: External REST API Integration, Avatar Management, and Jest Testing
+
+The fifth homework assignment builds upon the solid foundation of previous projects, expanding the capabilities of the application to include external REST API integration, avatar management, and Jest testing for enhanced functionality and reliability.
+
 ## Getting Started
 
 Follow these instructions to set up the project on your local machine for development and testing purposes.
