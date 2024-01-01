@@ -30,6 +30,7 @@ authRouter.post("/logout", authenticate, authController.logOut);
 authRouter.patch(
   "/",
   isEmptyBody,
+  authenticate,
   validateBody(updateSubscriptionSchema),
   authController.updateSubscription
 );
