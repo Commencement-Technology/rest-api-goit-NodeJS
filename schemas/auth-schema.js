@@ -20,16 +20,6 @@ const userAuthSchema = Joi.object({
 });
 
 const updateSubscriptionSchema = Joi.object({
-  email: Joi.string()
-    .email({
-      minDomainSegments: 2,
-      tlds: { allow: ["com", "net"] },
-    })
-    .required()
-    .messages({
-      "any.required": "Email is required",
-      "string.email": "Enter a valid email address",
-    }),
   subscription: Joi.string().required(),
 });
 

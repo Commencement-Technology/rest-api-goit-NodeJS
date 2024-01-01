@@ -69,9 +69,10 @@ const logOut = async (req, res) => {
 };
 
 const updateSubscription = async (req, res) => {
-  const { email, subscription } = req.body;
+  const { subscription } = req.body;
+  const { _id: owner } = req.user;
   const updatedUser = await User.findOneAndUpdate(
-    { email },
+    owner,
     { subscription },
     { new: true }
   );
