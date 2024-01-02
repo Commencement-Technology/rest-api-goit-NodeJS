@@ -1,4 +1,4 @@
-# Fullstack Bootcamp Node.js Backend Project
+# External REST API Integration, Avatar Management, and Jest Testing
 
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
@@ -11,98 +11,9 @@
 [![Jest](https://img.shields.io/badge/Jest-v29.7.0-A7001B)](https://jestjs.io/)
 [![Gravatar](https://img.shields.io/badge/Gravatar-v1.8.2-1C78B0)](https://en.gravatar.com/)
 
-This repository contains a ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) REST API project developed during my full-stack bootcamp. The project spans from the 2nd homework assignment to the 6th and serves as a practical implementation of the concepts covered in the bootcamp. It provides a foundation for building scalable and robust RESTful web services.
-
-## Table of Contents
-
-- [Homework2](#homework2-http-requests-and-json-contact-management)
-- [Homework3](#homework3-nodejs-mongodb-and-mongoose-crud-backend)
-- [Homework4](#homework4-nodejs-mongodb-mongoose-and-jwt-authentication-with-extended-contact-management)
-- [Homework5](#homework5-external-rest-api-integration-avatar-management-and-jest-testing)
-- [Homework6](#homework6)
-- [Getting Started](#getting-started)
-- [API Endpoints](#project-api-endpoints)
-- [Issues](#issues)
-- [Acknowledgments](#acknowledgments)
-
-## Homework2: HTTP Requests and JSON Contact Management
-
-The second homework assignment focuses on working with HTTP requests in a ![Alt text](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white) environment. The project involves managing a ![Alt text](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) file containing contacts. The application allows performing various operations on the contacts, including:
-
-## API Endpoints
-
-- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
-- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
-- **(POST) `/api/contacts`:** Add a new contact to the list.
-- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
-- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
-
-## Technologies Used
-
-- ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
-- ![Express.js](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
-- **Cors:** Middleware for handling Cross-Origin Resource Sharing in Express.js applications.
-- **Morgan:** HTTP request logger middleware for Express.js.
-- **UUID:** Used for generating unique IDs for various purposes.
-- ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white): Data interchange format used in the project.
-
-## Homework3: Node.js, MongoDB, and Mongoose CRUD Backend
-
-The third homework assignment builds upon the previous project, now incorporating ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) with ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white) for data persistence. The application manages contacts stored in a MongoDB database and allows users to perform various operations on the contacts. The supported CRUD operations include:
-
-## API Endpoints
-
-- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
-- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
-- **(POST) `/api/contacts`:** Add a new contact to the list.
-- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
-- **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
-- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
-
-## Technologies Used
-
-- ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
-- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white): A NoSQL database for data persistence.
-- ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white): An ODM (Object Data Modeling) library for MongoDB and Node.js.
-- ![Express.js](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
-- ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white): Data interchange format used in the project.
-
-## Homework4: Node.js, MongoDB, Mongoose, and JWT Authentication with Extended Contact Management
-
-The fourth homework assignment extends the capabilities developed in previous projects, specifically focusing on HTTP requests, ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white) contact management, and ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white) integration. Building upon this foundation, the current module introduces a robust authentication system using ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white) (JWT) and enhances the contact management system with additional features to provide a more comprehensive and secure user experience.
-
-## API Endpoints
-
-### Contact endpoints
-
-- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
-- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
-- **(POST) `/api/contacts`:** Add a new contact to the list.
-- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
-- **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
-- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
-
-### User endpoints
-
-- **(POST) `/api/users/signup`:** Register a new user.
-- **(POST) `/api/users/signin`:** Login and obtain a JWT.
-- **(POST) `/api/users/logout`:** Logout the user.
-- **(GET) `/api/users/current`:** Retrieve information about the currently logged-in user.
-
-### Additional Endpoints
-
-- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
-- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
-- **(PATCH) `/api/users`:** Update the user's subscription level.
-
-## Technologies Used
-
-- ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white): The runtime environment for executing the application.
-- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248.svg?style=for-the-badge&logo=mongodb&logoColor=white): A NoSQL database for data persistence.
-- ![Mongoose](https://img.shields.io/badge/Mongoose-880000.svg?style=for-the-badge&logo=mongoose&logoColor=white): An ODM (Object Data Modeling) library for MongoDB and Node.js.
-- ![JSON Web Token](https://img.shields.io/badge/JSON%20Web%20Tokens-000000.svg?style=for-the-badge&logo=JSON-Web-Tokens&logoColor=white): Used for user authentication.
-- ![Express.js](https://img.shields.io/badge/Express-000000.svg?style=for-the-badge&logo=Express&logoColor=white): A web application framework for building RESTful APIs.
-- ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white): Data interchange format used in the project.
+Welcome to the fifth homework assignment in the Fullstack Bootcamp, where we continue to build upon the foundation laid by our previous projects, especially those emphasizing HTTP requests. This module signifies a shift in focus towards more advanced features.
+In this stage, we explore the integration of sophisticated functionalities, such as the ability to add avatars for users upon creation. This enhancement not only adds a personalized touch to user profiles but also enriches the overall user experience.
+Additionally, we delve into the world of Jest unit testing, ensuring the reliability and robustness of our application. This step reflects our commitment to delivering high-quality Fullstack solutions. As we integrate these innovations, we look forward to the unfolding possibilities on our journey of continuous skill development.
 
 ## Homework5: External REST API Integration, Avatar Management, and Jest Testing
 
@@ -155,68 +66,6 @@ The fifth homework assignment builds upon the solid foundation of previous proje
 - ![Jest](https://img.shields.io/badge/Jest-C21325.svg?style=for-the-badge&logo=Jest&logoColor=white):JavaScript testing framework ensuring code reliability and simplicity.
 - ![Gravatar](https://img.shields.io/badge/Gravatar-1E8CBE.svg?style=for-the-badge&logo=Gravatar&logoColor=white): Global avatar service for user profile images linked to email addresses.
 
-## Getting Started
-
-Follow these instructions to set up the project on your local machine for development and testing purposes.
-
-### Requirements
-
-- Node.js installed
-- NPM (Node Package Manager) installed
-
-### Installing
-
-1. Clone the repository to your local machine.
-   ```bash
-   git clone https://github.com/Alexandrbig1/nodejs-rest-api-homework.git
-   ```
-1. Navigate to the project folder.
-   ```bash
-   cd nodejs-rest-api-homework
-   ```
-1. Install dependencies.
-   ```bash
-   npm install
-   ```
-
-### Running the Application
-
-- **Production Mode:**
-  ```bash
-  npm start
-  ```
-- **Development Mode with Nodemon:**
-
-  ```bash
-  npm run dev
-
-  ```
-
-## Project API Endpoints
-
-### Contact endpoints
-
-- **(GET) `/api/contacts`:** Retrieve a list of all contacts.
-- **(GET) `/api/contacts/`:contactId:** Retrieve a specific contact by ID.
-- **(POST) `/api/contacts`:** Add a new contact to the list.
-- **(PUT) `/api/contacts/`:contactId:** Update an existing contact's information.
-- **(PATCH) `/api/contacts/`:contactId/favorite:** Partially update an existing contact's information.
-- **(DELETE) `/api/contacts/`:contactId:** Delete an existing contact from the list.
-
-### User endpoints
-
-- **(POST) `/api/users/signup`:** Register a new user.
-- **(POST) `/api/users/signin`:** Login and obtain a JWT.
-- **(POST) `/api/users/logout`:** Logout the user.
-- **(GET) `/api/users/current`:** Retrieve information about the currently logged-in user.
-- **(PATCH) `/api/users/avatars`:** Change the user's avatar.
-
-### Additional Endpoints
-
-- **(GET) `/api/contacts?page=<page_number>&limit=<page_size>`:** Retrieve paginated contacts.
-- **(GET) `/api/contacts?favorite=true`:** Retrieve contacts marked as favorites.
-- **(PATCH) `/api/users`:** Update the user's subscription level.
-
 ## Issues
 
 If you encounter any issues or have suggestions, please [open an issue](https://github.com/Alexandrbig1/rest-api-goit-NodeJS/issues).
@@ -227,7 +76,7 @@ I welcome feedback and suggestions from users to improve the application's funct
 
 ## Acknowledgments
 
-I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/us/) for their unwavering guidance and support during my enriching journey through the Fullstack Bootcamp. This comprehensive 10-month program has equipped me with valuable skills across various modules, and I am particularly grateful for the in-depth learning experience in Node.js, which serves as the final module in this transformative bootcamp.
+Big thanks to [@GoIT](https://goit.global/us/) for their valuable guidance and support during the completion of the 5th Node.js homework.
 
 ## Languages and Tools:
 
@@ -236,6 +85,7 @@ I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/u
 <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
 <a href="https://www.mongodb.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="50" /></a>
 <a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" /></a>
+<a href="https://www.jestjs.io/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jest.svg" alt="Jest" height="50" /></a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
 </div>
 
