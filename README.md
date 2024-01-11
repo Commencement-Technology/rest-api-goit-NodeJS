@@ -143,6 +143,7 @@ The fifth homework assignment builds upon the solid foundation of previous proje
 
 - Implements ![Jest](https://img.shields.io/badge/Jest-C21325.svg?style=for-the-badge&logo=Jest&logoColor=white) testing to ensure the robustness of the login functionality.
 - Unit tests are created to validate the authentication system, enhancing the overall reliability of the application.
+- Run tests using `npm run test` script defined in the package.json file.
 
 ## Technologies Used
 
@@ -186,10 +187,13 @@ Follow these instructions to set up the project on your local machine for develo
   npm start
   ```
 - **Development Mode with Nodemon:**
-
   ```bash
   npm run dev
-
+  ```
+- **Running Tests**
+To execute unit tests using Jest, use the following command:
+  ```bash
+  npm run test
   ```
 
 ## Project API Endpoints
@@ -236,6 +240,7 @@ I extend my sincere gratitude to the entire team at [GoIT](https://goit.global/u
 <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
 <a href="https://www.mongodb.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="50" /></a>
 <a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" /></a>
+<a href="https://www.jestjs.io/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jest.svg" alt="Jest" height="50" /></a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
 </div>
 
