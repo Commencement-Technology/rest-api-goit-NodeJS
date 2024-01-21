@@ -1,38 +1,20 @@
 import nodemailer from "nodemailer";
 import "dotenv/config";
 
-const { MAIL_API_KEY, MAIL_FROM } = process.env;
+const { EMAIL_FROM, EMAIL_PASSWORD } = process.env;
 
 const nodemailerConfig = {
-  host: "smtp.ukr.net",
-  port: 465,
-  secure: true,
+  service: "gmail",
   auth: {
-    user: MAIL_API_KEY,
-    pass: MAIL_FROM,
+    user: EMAIL_FROM,
+    pass: EMAIL_PASSWORD,
   },
 };
 
 const transport = nodemailer.createTransport(nodemailerConfig);
 
-// const data = {
-//   from: MAIL_API_KEY,
-//   to: "email address for who",
-//   subject: "topic of the letter",
-//   html: "<stron>Hi!</stron>",
-// };
-
-// transport
-//   .sendMail(email)
-//   .then(() => {
-//     console.log("Email sent!");
-//   })
-//   .catch((err) => {
-//     console.log(err.message);
-//   });
-
 const sendEmail = (data) => {
-  const email = { ...data, from: MAIL_FROM };
-  return transport.sendEmail(email);
+  const email = { ...data, from: EMAIL_FROM };
+  return transport.sendMail(email);
 };
 export { sendEmail };
